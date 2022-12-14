@@ -1,1 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.container .card {
+  border: 1px solid #0E79B2;
+  padding: 3vh;
+  margin: 1vh;
+  position: relative;
+  width: 70vw;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.container .card p {
+  padding: 10px 5px;
+}
+
 /*# sourceMappingURL=main.css.map */
