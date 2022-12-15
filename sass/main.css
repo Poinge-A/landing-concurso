@@ -38,7 +38,6 @@ nav .menu-list {
   right: 0;
   height: 100%;
   width: 60vw;
-  display: flex;
   justify-content: center;
   display: none;
 }
@@ -170,6 +169,6 @@ section .item-vantagens {
   justify-content: space-between;
 }
 
-/* .plano-content {
-  background-color: violet;
-} *//*# sourceMappingURL=main.css.map */
+.plano-content {
+  max-width: 30ch;
+}/*# sourceMappingURL=main.css.map */

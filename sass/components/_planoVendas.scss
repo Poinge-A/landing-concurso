@@ -37,7 +37,7 @@
   flex-flow: column wrap;
   justify-content: space-between;
 }
-//debugging
-/* .plano-content {
-  background-color: violet;
-} */
+
+.plano-content {
+  max-width: 30ch;
+}
