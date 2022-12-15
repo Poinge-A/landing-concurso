@@ -1,12 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
 :root {
     --azul: #0e79b2;
     --branco: #FBFEF9;
     --preto: #191923;
     --ffprimaria: 'Open Sans', 'sans-serif';
+    --ffsecond: 'Merriweather', serif;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ffsecond);
 }
