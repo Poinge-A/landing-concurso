@@ -1,14 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
 :root {
   --azul: #0e79b2;
   --branco: #FBFEF9;
   --preto: #191923;
   --ffprimaria: "Open Sans", "sans-serif";
+  --ffsecond: "Merriweather", serif;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ffsecond);
 }
 
 nav {
@@ -168,9 +174,11 @@ section .item-vantagens {
 .planos-title {
   color: var(--branco);
   font-family: var(--ffprimaria);
+  font-size: 180%;
+  margin: 1rem;
 }
 
-.section-vendas {
+#section-planos {
   background-color: var(--preto);
   display: flex;
   flex-flow: column wrap;
@@ -180,11 +188,13 @@ section .item-vantagens {
 .valor-destaque1 {
   color: red;
   font-weight: bold;
+  font-size: 130%;
 }
 
 .valor-destaque2 {
   color: green;
   font-weight: bold;
+  font-size: 180%;
 }
 
 .plano {
@@ -192,7 +202,7 @@ section .item-vantagens {
   flex-flow: column wrap;
   align-items: center;
   background-color: var(--branco);
-  color: var(--preto);
+  color: black;
   margin: 1.5rem 2rem;
   border-radius: 1rem;
   padding: 1rem;
@@ -206,4 +216,23 @@ section .item-vantagens {
 
 .plano-content {
   max-width: 30ch;
+}
+
+.plano-content p {
+  margin: 1rem;
+}
+
+.plano-button {
+  font-size: 140%;
+  border-radius: 2rem;
+  padding: 0.2rem 2rem;
+  background-color: var(--azul);
+  color: var(--branco);
+  font-family: var(--ffprimaria);
+  font-weight: bold;
+}
+
+.plano h3 {
+  font-family: var(--ffprimaria);
+  font-size: 180%;
 }/*# sourceMappingURL=main.css.map */
