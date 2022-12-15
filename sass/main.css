@@ -67,28 +67,30 @@ main .hero {
   align-items: center;
 }
 main .hero .card-hero {
-  background-color: var(--azul);
+  background-color: var(--branco);
   padding: 2rem;
   height: 15rem;
   display: flex;
   align-items: center;
   border-radius: 1rem;
+  box-shadow: -6px 6px 12px 0px var(--azul);
 }
 main .hero .elements-hero {
   font-family: var(--ffprimaria);
 }
 main .hero .elements-hero h1 {
   font-size: 1.2rem;
-  color: var(--branco);
+  color: var(--preto);
 }
 main .hero .elements-hero button {
   padding: 0.4rem;
   border: none;
   border-radius: 0.2rem;
   margin-top: 0.6rem;
-  color: var(--preto);
-  background-color: var(--branco);
+  color: var(--branco);
+  background-color: var(--azul);
   font-weight: 700;
+  box-shadow: -3px 7px 7px 1px var(--preto);
 }
 
 .container {
