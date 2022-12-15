@@ -132,5 +132,44 @@ section .item-vantagens {
 }
 
 .planos-title {
-  text-align: center;
-}/*# sourceMappingURL=main.css.map */
+  color: var(--branco);
+  font-family: var(--ffprimaria);
+}
+
+.section-vendas {
+  background-color: var(--preto);
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.valor-destaque1 {
+  color: red;
+  font-weight: bold;
+}
+
+.valor-destaque2 {
+  color: green;
+  font-weight: bold;
+}
+
+.plano {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  background-color: var(--branco);
+  color: var(--preto);
+  margin: 1.5rem 2rem;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.container-vendas {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+/* .plano-content {
+  background-color: violet;
+} *//*# sourceMappingURL=main.css.map */
