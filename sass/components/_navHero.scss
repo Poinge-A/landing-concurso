@@ -6,7 +6,7 @@ nav {
     justify-content: space-between;
     padding: 1rem 2rem 1rem 2rem;
 
-    background-color: yellow;
+    background-color: var(--branco);
 
     position: fixed;
     width: 100%;
@@ -26,7 +26,7 @@ nav {
 
     .menu-list {
 
-        background-color: black;
+        background-color: var(--preto);
 
         position: absolute;
         z-index: 1;
@@ -54,7 +54,7 @@ nav {
             a {
                 text-decoration: none;
                 color: white;
-                
+                font-family: var(--ffprimaria);
             }
         }
     }
