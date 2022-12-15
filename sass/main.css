@@ -34,11 +34,10 @@ nav .menu-list {
   background-color: var(--preto);
   position: absolute;
   z-index: 1;
-  top: 10vh;
+  top: 100%;
   right: 0;
   height: 100%;
   width: 60vw;
-  display: flex;
   justify-content: center;
   display: none;
 }

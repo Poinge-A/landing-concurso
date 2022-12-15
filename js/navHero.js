@@ -19,8 +19,7 @@ function navHeroJs() {
       menuBtn.style.display = 'inline-block';
     };
     closeBtn.addEventListener('click', closeNav);
-  
-    return
+
   }
   
   export { navHeroJs }
