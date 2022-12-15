@@ -59,10 +59,25 @@ nav .menu-list li a {
 main {
   padding-top: 5rem;
 }
-
-.hero {
+main .hero {
   background-color: var(--preto);
-  height: 20rem;
+  height: 25rem;
+}
+main .hero .elements-hero {
+  font-family: var(--ffprimaria);
+}
+main .hero .elements-hero h1 {
+  font-size: 1.8rem;
+  color: var(--branco);
+}
+main .hero .elements-hero button {
+  padding: 0.4rem;
+  border: none;
+  border-radius: 0.2rem;
+  margin-top: 0.6rem;
+  color: var(--preto);
+  background-color: var(--branco);
+  font-weight: 700;
 }
 
 .container {
