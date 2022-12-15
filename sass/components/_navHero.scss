@@ -1,10 +1,4 @@
 // Barra de Navegação
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 nav {
 
     display: flex;
@@ -40,6 +34,7 @@ nav {
         background-color: black;
 
         position: absolute;
+        z-index: 1;
         top: 10vh;
         right: 0;
         height: 100%;
@@ -62,6 +57,7 @@ nav {
             a {
                 text-decoration: none;
                 color: white;
+                
             }
         }
     }

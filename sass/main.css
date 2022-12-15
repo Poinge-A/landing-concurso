@@ -4,36 +4,6 @@
   box-sizing: border-box;
 }
 
-.container {
-  border: 1px solid red;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.container .card {
-  border: 1px solid #0E79B2;
-  padding: 3vh;
-  margin: 1vh;
-  position: relative;
-  width: 70vw;
-  text-align: center;
-  border-radius: 20px;
-}
-
-.container .card p {
-  padding: 10px 5px;
-}
-
-/*# sourceMappingURL=main.css.map */
-
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 nav {
   display: flex;
   align-items: center;
@@ -55,6 +25,7 @@ nav .menu-list.active {
 nav .menu-list {
   background-color: black;
   position: absolute;
+  z-index: 1;
   top: 10vh;
   right: 0;
   height: 100%;
@@ -74,4 +45,27 @@ nav .menu-list li {
 nav .menu-list li a {
   text-decoration: none;
   color: white;
+}
+
+.container {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.container .card {
+  border: 1px solid #0E79B2;
+  padding: 3vh;
+  margin: 1vh;
+  position: relative;
+  width: 70vw;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.container .card p {
+  padding: 10px 5px;
 }/*# sourceMappingURL=main.css.map */
