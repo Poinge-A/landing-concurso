@@ -7,6 +7,7 @@ const closeBtn = document.querySelector('#close-menu-btn');
 
 menuBtn.addEventListener('click', () => {
   menu.style.display = 'flex';
+  menu.style.height = '90vh'
   closeBtn.style.display = 'inline-block';
   menuBtn.style.display = 'none';
 });
