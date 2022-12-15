@@ -1,0 +1,65 @@
+// Barra de Navegação
+nav {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 1.5rem 1.5rem 1rem;
+
+    .logo {
+
+        img {
+
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+
+    .buttonOpenMenu {
+
+        img {
+            width: 2.5rem;
+            height: 2.5rem;
+
+            cursor: pointer;
+        }
+    }
+
+    .menu-list.active {
+        display: none;
+    }
+
+    .menu-list {
+
+        background-color: black;
+
+        position: absolute;
+        z-index: 1;
+        top: 10vh;
+        right: 0;
+        height: 100%;
+        width: 50vw;
+
+        display: flex;
+        justify-content: center;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;    
+            justify-content: space-around;
+
+        }
+
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: white;
+                
+            }
+        }
+    }
+}
+

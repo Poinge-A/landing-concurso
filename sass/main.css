@@ -1,7 +1,67 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 1.5rem 1.5rem 1rem;
+}
+nav .logo img {
+  width: 3rem;
+  height: 3rem;
+}
+nav .buttonOpenMenu img {
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+nav .menu-list.active {
+  display: none;
+}
+nav .menu-list {
+  background-color: black;
+  position: absolute;
+  z-index: 1;
+  top: 10vh;
+  right: 0;
+  height: 100%;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+}
+nav .menu-list ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+nav .menu-list li {
+  list-style: none;
+}
+nav .menu-list li a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.container .card {
+  border: 1px solid #0E79B2;
+  padding: 3vh;
+  margin: 1vh;
+  position: relative;
+  width: 70vw;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.container .card p {
+  padding: 10px 5px;
 }
 
 .container-prox-concurso {
