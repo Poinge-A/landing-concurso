@@ -56,6 +56,15 @@ nav .menu-list li a {
   font-family: var(--ffprimaria);
 }
 
+main {
+  padding-top: 5rem;
+}
+
+.hero {
+  background-color: var(--preto);
+  height: 20rem;
+}
+
 .container {
   border: 1px solid red;
   display: flex;
