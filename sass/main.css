@@ -16,7 +16,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem 1rem 2rem;
-  background-color: yellow;
+  background-color: var(--branco);
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -31,7 +31,7 @@ nav #close-menu-btn {
   background-color: transparent;
 }
 nav .menu-list {
-  background-color: black;
+  background-color: var(--preto);
   position: absolute;
   z-index: 1;
   top: 10vh;
@@ -54,6 +54,7 @@ nav .menu-list li {
 nav .menu-list li a {
   text-decoration: none;
   color: white;
+  font-family: var(--ffprimaria);
 }
 
 .container {
