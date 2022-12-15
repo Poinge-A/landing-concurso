@@ -79,7 +79,7 @@ main .hero .card-hero {
   display: flex;
   align-items: center;
   border-radius: 1rem;
-  box-shadow: -6px 6px 12px 0px var(--azul);
+  box-shadow: -6px 6px 12px 0 var(--azul);
 }
 main .hero .elements-hero {
   font-family: var(--ffprimaria);
