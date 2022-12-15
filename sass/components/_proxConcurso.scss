@@ -1,16 +1,20 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.container-prox-concurso {
+
+.container-prox-concurso{
   display: grid;
   place-items: center;
   grid-template-columns: 1fr;
+
 }
 
-section .item-concurso {
+section{
+
+  .item-concurso{
   width: 250px;
   height: 200px;
   border: 1px solid black;
@@ -22,7 +26,8 @@ section .item-concurso {
   padding: 10px;
   border-radius: 10px;
 }
-section .btn-concurso {
+
+.btn-concurso{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   background-color: #191923;
@@ -32,16 +37,20 @@ section .btn-concurso {
   cursor: pointer;
   height: 40px;
 }
+}
 
-.container-vantagens {
+.container-vantagens{
   display: grid;
   place-items: center;
   grid-template-columns: 1fr;
   margin-top: 20px;
   background-color: #f5f5f5;
+
 }
 
-section .item-vantagens {
+section{
+
+  .item-vantagens{
   width: 250px;
   height: 200px;
   box-shadow: rgba(29, 112, 207, 0.4) -5px 5px, rgba(46, 59, 240, 0.3) -10px 10px, rgba(40, 52, 156, 0.2) -15px 15px, rgba(56, 49, 153, 0.1) -20px 20px, rgba(17, 33, 124, 0.05) -25px 25px;
@@ -53,4 +62,6 @@ section .item-vantagens {
   font-family: Arial, Helvetica, sans-serif;
   padding: 10px 10px;
   border-radius: 10px;
-}/*# sourceMappingURL=main.css.map */
+}
+}
+
