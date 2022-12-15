@@ -2,6 +2,19 @@ const buttonOpenMenu = document.querySelector('.buttonOpenMenu')
 
 const menu = document.querySelector('.menu-list')
 
-buttonOpenMenu.addEventListener('click', () => {
-    menu.classList.toggle('active')
-})
+const menuBtn = document.querySelector('#open-menu-btn');
+const closeBtn = document.querySelector('#close-menu-btn');
+
+menuBtn.addEventListener('click', () => {
+  menu.style.display = 'flex';
+  closeBtn.style.display = 'inline-block';
+  menuBtn.style.display = 'none';
+});
+
+//close menu nav
+const closeNav = () => {
+  menu.style.display = 'none';
+  closeBtn.style.display = 'none';
+  menuBtn.style.display = 'inline-block';
+};
+closeBtn.addEventListener('click', closeNav);

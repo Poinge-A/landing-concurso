@@ -4,6 +4,9 @@ nav {
   justify-content: space-between;
   margin: 1rem 1.5rem 1.5rem 1rem;
 }
+nav #close-menu-btn {
+  display: none;
+}
 nav .logo img {
   width: 3rem;
   height: 3rem;
@@ -12,9 +15,6 @@ nav .buttonOpenMenu img {
   width: 2.5rem;
   height: 2.5rem;
   cursor: pointer;
-}
-nav .menu-list.active {
-  display: none;
 }
 nav .menu-list {
   background-color: black;
@@ -26,6 +26,7 @@ nav .menu-list {
   width: 50vw;
   display: flex;
   justify-content: center;
+  display: none;
 }
 nav .menu-list ul {
   display: flex;
