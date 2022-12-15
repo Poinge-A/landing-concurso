@@ -60,14 +60,25 @@ main {
   padding-top: 5rem;
 }
 main .hero {
+  display: flex;
+  justify-content: center;
   background-color: var(--preto);
   height: 25rem;
+  align-items: center;
+}
+main .hero .card-hero {
+  background-color: var(--azul);
+  padding: 2rem;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
 }
 main .hero .elements-hero {
   font-family: var(--ffprimaria);
 }
 main .hero .elements-hero h1 {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   color: var(--branco);
 }
 main .hero .elements-hero button {
