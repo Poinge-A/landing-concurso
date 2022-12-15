@@ -6,6 +6,10 @@ nav {
     justify-content: space-between;
     margin: 1rem 1.5rem 1.5rem 1rem;
 
+    #close-menu-btn {
+        display: none;
+    }
+
     .logo {
 
         img {
@@ -25,10 +29,6 @@ nav {
         }
     }
 
-    .menu-list.active {
-        display: none;
-    }
-
     .menu-list {
 
         background-color: black;
@@ -42,6 +42,8 @@ nav {
 
         display: flex;
         justify-content: center;
+
+        display: none;
 
         ul {
             display: flex;

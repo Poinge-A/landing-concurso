@@ -4,6 +4,9 @@ nav {
   justify-content: space-between;
   margin: 1rem 1.5rem 1.5rem 1rem;
 }
+nav #close-menu-btn {
+  display: none;
+}
 nav .logo img {
   width: 3rem;
   height: 3rem;
@@ -12,9 +15,6 @@ nav .buttonOpenMenu img {
   width: 2.5rem;
   height: 2.5rem;
   cursor: pointer;
-}
-nav .menu-list.active {
-  display: none;
 }
 nav .menu-list {
   background-color: black;
@@ -26,6 +26,7 @@ nav .menu-list {
   width: 50vw;
   display: flex;
   justify-content: center;
+  display: none;
 }
 nav .menu-list ul {
   display: flex;
@@ -104,7 +105,7 @@ section .btn-concurso {
 section .item-vantagens {
   width: 250px;
   height: 200px;
-  box-shadow: rgba(29, 112, 207, 0.4) -5px 5px, rgba(46, 59, 240, 0.3) -10px 10px, rgba(40, 52, 156, 0.2) -15px 15px, rgba(56, 49, 153, 0.1) -20px 20px, rgba(17, 33, 124, 0.05) -25px 25px;
+  box-shadow: rgba(11, 43, 129, 0.4) 0px 5px, rgba(6, 17, 168, 0.3) 0px 10px, rgba(11, 43, 129, 0.4) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
   border: 1px solid black;
   background-color: rgb(250, 250, 250);
   line-height: 40px;
