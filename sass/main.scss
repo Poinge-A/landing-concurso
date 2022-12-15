@@ -1,3 +1,5 @@
+@use './root/_root';
 @use 'components/_navHero';
 @use 'components/_depoimentos.scss';
-@use 'components/proxConcurso'
+@use 'components/proxConcurso';
+@use 'components/planoVendas';

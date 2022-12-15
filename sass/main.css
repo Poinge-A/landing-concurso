@@ -1,3 +1,16 @@
+:root {
+  --azul: #0e79b2;
+  --branco: #FBFEF9;
+  --preto: #191923;
+  --ffprimaria: "Open Sans", "sans-serif";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -114,4 +127,8 @@ section .item-vantagens {
   font-family: Arial, Helvetica, sans-serif;
   padding: 10px 10px;
   border-radius: 10px;
+}
+
+.planos-title {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
