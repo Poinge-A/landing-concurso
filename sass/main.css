@@ -1,14 +1,8 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  margin-top: 1rem;
+  justify-content: space-between;
+  margin: 1rem 1.5rem 1.5rem 1rem;
 }
 nav .logo img {
   width: 3rem;
@@ -17,10 +11,15 @@ nav .logo img {
 nav .buttonOpenMenu img {
   width: 2.5rem;
   height: 2.5rem;
+  cursor: pointer;
+}
+nav .menu-list.active {
+  display: none;
 }
 nav .menu-list {
   background-color: black;
   position: absolute;
+  z-index: 1;
   top: 10vh;
   right: 0;
   height: 100%;
@@ -40,12 +39,6 @@ nav .menu-list li {
 nav .menu-list li a {
   text-decoration: none;
   color: white;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 .container {
