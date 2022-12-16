@@ -120,20 +120,31 @@ main {
 
         background-color: var(--azul);
 
-        height:40rem;
+        height:50rem;
 
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
 
+        h1 {
+
+            color: var(--branco);
+        }
+
         .cards-highlights {
 
             display: grid;
+            grid-template-columns: 1fr;
             justify-items: center;
-            gap: 2rem;
+            gap: 1rem;
 
             font-family: var(--ffprimaria);
+
+            span {
+
+                font-weight: 700;
+            }
 
             .highlights-card-1 {
 
@@ -146,8 +157,9 @@ main {
 
                 border-radius: 0.5rem;
 
-                height: 10rem;
+                height: 12.5rem;
                 width: 16rem;
+
 
                 button {
 
@@ -173,7 +185,7 @@ main {
 
                 border-radius: 0.5rem;
 
-                height: 10rem;
+                height: 12.5rem;
                 width: 16rem;
 
                 button {
@@ -199,7 +211,7 @@ main {
 
                 border-radius: 0.5rem;
 
-                height: 10rem;
+                height: 12.5rem;
                 width: 16rem;
 
                 button {
