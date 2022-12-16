@@ -107,12 +107,18 @@ main .c-destaques {
   align-items: center;
   justify-content: space-evenly;
 }
+main .c-destaques h1 {
+  color: var(--branco);
+}
 main .c-destaques .cards-highlights {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
   gap: 1rem;
   font-family: var(--ffprimaria);
+}
+main .c-destaques .cards-highlights span {
+  font-weight: 700;
 }
 main .c-destaques .cards-highlights .highlights-card-1 {
   background-color: var(--branco);

@@ -127,6 +127,11 @@ main {
         align-items: center;
         justify-content: space-evenly;
 
+        h1 {
+
+            color: var(--branco);
+        }
+
         .cards-highlights {
 
             display: grid;
@@ -135,6 +140,11 @@ main {
             gap: 1rem;
 
             font-family: var(--ffprimaria);
+
+            span {
+
+                font-weight: 700;
+            }
 
             .highlights-card-1 {
 
@@ -149,6 +159,7 @@ main {
 
                 height: 12.5rem;
                 width: 16rem;
+
 
                 button {
 
