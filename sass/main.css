@@ -101,17 +101,24 @@ main .hero .elements-hero button {
 }
 main .c-destaques {
   background-color: var(--azul);
-  height: 40rem;
+  height: 50rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 }
+main .c-destaques h1 {
+  color: var(--branco);
+}
 main .c-destaques .cards-highlights {
   display: grid;
+  grid-template-columns: 1fr;
   justify-items: center;
-  gap: 2rem;
+  gap: 1rem;
   font-family: var(--ffprimaria);
+}
+main .c-destaques .cards-highlights span {
+  font-weight: 700;
 }
 main .c-destaques .cards-highlights .highlights-card-1 {
   background-color: var(--branco);
@@ -120,7 +127,7 @@ main .c-destaques .cards-highlights .highlights-card-1 {
   align-items: center;
   justify-content: space-evenly;
   border-radius: 0.5rem;
-  height: 10rem;
+  height: 12.5rem;
   width: 16rem;
 }
 main .c-destaques .cards-highlights .highlights-card-1 button {
@@ -137,7 +144,7 @@ main .c-destaques .cards-highlights .highlights-card-2 {
   align-items: center;
   justify-content: space-evenly;
   border-radius: 0.5rem;
-  height: 10rem;
+  height: 12.5rem;
   width: 16rem;
 }
 main .c-destaques .cards-highlights .highlights-card-2 button {
@@ -154,7 +161,7 @@ main .c-destaques .cards-highlights .highlights-card-3 {
   align-items: center;
   justify-content: space-evenly;
   border-radius: 0.5rem;
-  height: 10rem;
+  height: 12.5rem;
   width: 16rem;
 }
 main .c-destaques .cards-highlights .highlights-card-3 button {
@@ -329,6 +336,4 @@ section .item-vantagens {
 .plano h3 {
   font-family: var(--ffprimaria);
   font-size: 180%;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
