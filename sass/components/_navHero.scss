@@ -64,42 +64,6 @@ main {
 
     padding-top: 5rem;
 
-
-    .c-destaques {
-
-        background-color: red;
-
-        height: 30rem;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-
-        .cards-highlights {
-
-            display: grid;
-            justify-items: center;
-            gap: 2rem;
-
-            .highlights-card-1 {
-
-                background-color: var(--branco);
-
-            }
-
-            .highlights-card-2 {
-
-                background-color: var(--branco);
-            }
-
-            .highlights-card-3 {
-
-                background-color: var(--branco);
-            }
-        }
-    }
-
     .hero {
 
         display: flex;
@@ -146,6 +110,108 @@ main {
                 font-weight: 700;
 
                 box-shadow: -3px 7px 7px 1px var(--preto);
+            }
+        }
+    }
+
+// Destaques
+
+    .c-destaques {
+
+        background-color: red;
+
+        height:40rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .cards-highlights {
+
+            display: grid;
+            justify-items: center;
+            gap: 2rem;
+
+            font-family: var(--ffprimaria);
+
+            .highlights-card-1 {
+
+                background-color: var(--branco);
+                
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+
+                border-radius: 0.5rem;
+
+                height: 10rem;
+                width: 16rem;
+
+                button {
+
+                    border: none;
+
+                    padding: .5rem;
+                    border-radius: .3rem;
+
+                    background-color: var(--azul);
+                    color: var(--branco);
+                }
+
+            }
+
+            .highlights-card-2 {
+
+                background-color: var(--branco);
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+
+                border-radius: 0.5rem;
+
+                height: 10rem;
+                width: 16rem;
+
+                button {
+
+                    border: none;
+
+                    padding: .5rem;
+                    border-radius: .3rem;
+
+                    background-color: var(--azul);
+                    color: var(--branco);
+                }
+            }
+
+            .highlights-card-3 {
+
+                background-color: var(--branco);
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+
+                border-radius: 0.5rem;
+
+                height: 10rem;
+                width: 16rem;
+
+                button {
+
+                    border: none;
+
+                    padding: .5rem;
+                    border-radius: .3rem;
+
+                    background-color: var(--azul);
+                    color: var(--branco);
+                }
             }
         }
     }

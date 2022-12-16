@@ -66,28 +66,6 @@ nav .menu-list li a {
 main {
   padding-top: 5rem;
 }
-main .c-destaques {
-  background-color: red;
-  height: 30rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-main .c-destaques .cards-highlights {
-  display: grid;
-  justify-items: center;
-  gap: 2rem;
-}
-main .c-destaques .cards-highlights .highlights-card-1 {
-  background-color: var(--branco);
-}
-main .c-destaques .cards-highlights .highlights-card-2 {
-  background-color: var(--branco);
-}
-main .c-destaques .cards-highlights .highlights-card-3 {
-  background-color: var(--branco);
-}
 main .hero {
   display: flex;
   justify-content: center;
@@ -120,6 +98,71 @@ main .hero .elements-hero button {
   background-color: var(--azul);
   font-weight: 700;
   box-shadow: -3px 7px 7px 1px var(--preto);
+}
+main .c-destaques {
+  background-color: red;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+main .c-destaques .cards-highlights {
+  display: grid;
+  justify-items: center;
+  gap: 2rem;
+  font-family: var(--ffprimaria);
+}
+main .c-destaques .cards-highlights .highlights-card-1 {
+  background-color: var(--branco);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 0.5rem;
+  height: 10rem;
+  width: 16rem;
+}
+main .c-destaques .cards-highlights .highlights-card-1 button {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  background-color: var(--azul);
+  color: var(--branco);
+}
+main .c-destaques .cards-highlights .highlights-card-2 {
+  background-color: var(--branco);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 0.5rem;
+  height: 10rem;
+  width: 16rem;
+}
+main .c-destaques .cards-highlights .highlights-card-2 button {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  background-color: var(--azul);
+  color: var(--branco);
+}
+main .c-destaques .cards-highlights .highlights-card-3 {
+  background-color: var(--branco);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 0.5rem;
+  height: 10rem;
+  width: 16rem;
+}
+main .c-destaques .cards-highlights .highlights-card-3 button {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  background-color: var(--azul);
+  color: var(--branco);
 }
 
 .container {
