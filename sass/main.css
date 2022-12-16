@@ -100,7 +100,7 @@ main .hero .elements-hero button {
   box-shadow: -3px 7px 7px 1px var(--preto);
 }
 main .c-destaques {
-  background-color: red;
+  background-color: var(--azul);
   height: 40rem;
   display: flex;
   flex-direction: column;
