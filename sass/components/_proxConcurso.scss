@@ -67,5 +67,13 @@ section{
 }
 }
 
-.item-vantagens:hover{box-shadow:0 3px 8px 0 #b5babdbf}
-.item-concurso:hover{box-shadow:0 3px 8px 0 #b5babdbf}
+.item-vantagens:hover{
+  box-shadow:0 3px 8px 0 #b5babdbf;
+  transform: scale(1.1);
+  transition: transform 500ms;
+}
+.item-concurso:hover{
+  box-shadow:0 3px 8px 0 #b5babdbf;
+  transform: scale(1.1);
+  transition: transform 500ms;
+}

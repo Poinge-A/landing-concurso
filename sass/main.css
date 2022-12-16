@@ -15,6 +15,7 @@
 
 body {
   font-family: var(--ffsecond);
+  background-color: #EDEDED;
 }
 
 nav {
@@ -181,11 +182,15 @@ section .item-vantagens {
 
 .item-vantagens:hover {
   box-shadow: 0 3px 8px 0 rgba(181, 186, 189, 0.7490196078);
+  transform: scale(1.1);
+  transition: transform 500ms;
 }
 
 .item-concurso:hover {
   box-shadow: 0 3px 8px 0 rgba(181, 186, 189, 0.7490196078);
 
+  transform: scale(1.1);
+  transition: transform 500ms;
 }
 
 .planos-title {
