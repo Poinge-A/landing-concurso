@@ -13,15 +13,17 @@
 }
 
 .valor-destaque1 {
-  color: red;
+  color: lightgray;
   font-weight: bold;
   font-size: 130%;
+  font-family: var(--ffprimaria);
 }
 
 .valor-destaque2 {
-  color:green;
+  color:black;
   font-weight: bold;
   font-size: 180%;
+  font-family: var(--ffprimaria);
 }
 
 .plano {
@@ -46,7 +48,7 @@
   max-width: 30ch;
 }
 
-.plano-content p{
+.plano-content *{
   margin: 1rem;
 }
 
@@ -63,4 +65,8 @@
 .plano h3 {
   font-family: var(--ffprimaria);
   font-size: 180%;
+}
+
+.plano-benefic {
+  background-color: violet;
 }
