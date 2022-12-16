@@ -94,10 +94,24 @@ main .hero .card-hero {
   background-color: transparent;
   padding: 2rem;
   height: 30rem;
-  width: 100vw;
-  opacity: 0.8;
+  width: 100%;
+  opacity: 85%;
   background-color: rgb(0, 0, 0);
-  box-shadow: 0 0 4px 0 #d9dde0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .hero .card-hero #btn-hero {
+  justify-content: center;
+  border: none;
+  height: 2rem;
+  width: 10rem;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  color: var(--branco);
+  background-color: blue;
+  font-weight: 700;
+  box-shadow: -3px 7px 7px 1px var(--preto);
 }
 main .hero .elements-hero {
   display: flex;
@@ -110,29 +124,20 @@ main .hero .elements-hero h1 {
   color: rgb(255, 255, 255);
   text-align: center;
 }
-main .hero .elements-hero button {
-  justify-content: center;
-  border: none;
-  height: 6vh;
-  border-radius: 2rem;
-  margin-top: 5rem;
-  color: var(--branco);
-  background-color: var(--azul);
-  font-weight: 700;
-  box-shadow: -3px 7px 7px 1px var(--preto);
-}
 main .hero .elements-hero p {
+  margin-top: 1rem;
   color: white;
   text-align: center;
   font-size: 1rem;
 }
 main .c-destaques {
-  height: 50rem;
+  height: 60rem;
   box-shadow: 0 0 4px 0 #d9dde0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  background-color: var(--preto);
 }
 main .c-destaques h1 {
   color: var(--branco);
@@ -154,7 +159,7 @@ main .c-destaques .cards-highlights .highlights-card-1 {
   align-items: center;
   justify-content: space-evenly;
   border-radius: 0.5rem;
-  height: 12.5rem;
+  height: 15rem;
   width: 16rem;
 }
 main .c-destaques .cards-highlights .highlights-card-1 button {
@@ -171,7 +176,7 @@ main .c-destaques .cards-highlights .highlights-card-2 {
   align-items: center;
   justify-content: space-evenly;
   border-radius: 0.5rem;
-  height: 12.5rem;
+  height: 15rem;
   width: 16rem;
 }
 main .c-destaques .cards-highlights .highlights-card-2 button {
@@ -188,7 +193,7 @@ main .c-destaques .cards-highlights .highlights-card-3 {
   align-items: center;
   justify-content: space-evenly;
   border-radius: 0.5rem;
-  height: 12.5rem;
+  height: 15rem;
   width: 16rem;
 }
 main .c-destaques .cards-highlights .highlights-card-3 button {
@@ -248,7 +253,7 @@ section .title-card {
   margin-top: 1.5rem;
 }
 section .item-concurso {
-  width: 24rem;
+  width: 16rem;
   height: 16rem;
   border: none;
   line-height: 2.5rem;
