@@ -120,7 +120,7 @@ main {
 
         background-color: var(--azul);
 
-        height:40rem;
+        height:50rem;
 
         display: flex;
         flex-direction: column;
@@ -130,8 +130,9 @@ main {
         .cards-highlights {
 
             display: grid;
+            grid-template-columns: 1fr;
             justify-items: center;
-            gap: 2rem;
+            gap: 1rem;
 
             font-family: var(--ffprimaria);
 
@@ -146,7 +147,7 @@ main {
 
                 border-radius: 0.5rem;
 
-                height: 10rem;
+                height: 12.5rem;
                 width: 16rem;
 
                 button {
@@ -173,7 +174,7 @@ main {
 
                 border-radius: 0.5rem;
 
-                height: 10rem;
+                height: 12.5rem;
                 width: 16rem;
 
                 button {
@@ -199,7 +200,7 @@ main {
 
                 border-radius: 0.5rem;
 
-                height: 10rem;
+                height: 12.5rem;
                 width: 16rem;
 
                 button {
