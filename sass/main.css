@@ -80,7 +80,7 @@ main .hero .card-hero {
   display: flex;
   align-items: center;
   border-radius: 1rem;
-  box-shadow: -6px 6px 12px 0 var(--azul);
+  box-shadow: -6px 6px 12px 0px var(--azul);
 }
 main .hero .elements-hero {
   font-family: var(--ffprimaria);
@@ -121,6 +121,14 @@ main .hero .elements-hero button {
 
 .container .card p {
   padding: 10px 5px;
+}
+
+.btn-depoimento {
+  background-color: var(--preto);
+  color: var(--branco);
+  width: 12.5rem;
+  height: 2.5rem;
+  border-radius: 0.65rem;
 }
 
 .container-prox-concurso {
@@ -188,7 +196,6 @@ section .item-vantagens {
 
 .item-concurso:hover {
   box-shadow: 0 3px 8px 0 rgba(181, 186, 189, 0.7490196078);
-
   transform: scale(1.1);
   transition: transform 500ms;
 }
@@ -257,4 +264,6 @@ section .item-vantagens {
 .plano h3 {
   font-family: var(--ffprimaria);
   font-size: 180%;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */

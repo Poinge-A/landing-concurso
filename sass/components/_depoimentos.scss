@@ -24,3 +24,12 @@
 .container .card p {
     padding: 10px 5px;
 }
+
+.btn-depoimento {
+    background-color: var(--preto);
+    color: var(--branco);
+    width: 12.5rem;
+    height: 2.5rem;
+    border-radius: 0.65rem;
+    // font-family: var(--ffprimaria);
+}
