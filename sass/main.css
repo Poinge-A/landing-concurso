@@ -188,6 +188,14 @@ main .c-destaques .cards-highlights .highlights-card-3 button {
   padding: 10px 5px;
 }
 
+.btn-depoimento {
+  background-color: var(--preto);
+  color: var(--branco);
+  width: 12.5rem;
+  height: 2.5rem;
+  border-radius: 0.65rem;
+}
+
 .container-prox-concurso {
   display: grid;
   place-items: center;
@@ -321,4 +329,6 @@ section .item-vantagens {
 .plano h3 {
   font-family: var(--ffprimaria);
   font-size: 180%;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
