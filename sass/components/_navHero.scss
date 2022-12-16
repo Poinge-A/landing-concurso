@@ -64,12 +64,48 @@ main {
 
     padding-top: 5rem;
 
+
+    .c-destaques {
+
+        background-color: red;
+
+        height: 30rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .cards-highlights {
+
+            display: grid;
+            justify-items: center;
+            gap: 2rem;
+
+            .highlights-card-1 {
+
+                background-color: var(--branco);
+
+            }
+
+            .highlights-card-2 {
+
+                background-color: var(--branco);
+            }
+
+            .highlights-card-3 {
+
+                background-color: var(--branco);
+            }
+        }
+    }
+
     .hero {
 
         display: flex;
         justify-content: center;
         background-color: var(--preto);
-        height: 25rem;
+        height: 30rem;
         align-items: center;
 
         .card-hero {
