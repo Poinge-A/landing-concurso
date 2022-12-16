@@ -149,6 +149,12 @@ main .c-destaques .cards-highlights {
   gap: 1rem;
   font-family: var(--ffprimaria);
 }
+main .c-destaques .cards-highlights .img-card-control {
+  height: 246px;
+  width: 223px;
+  margin-top: 100px;
+  position: absolute;
+}
 main .c-destaques .cards-highlights span {
   font-weight: 700;
 }
@@ -276,10 +282,13 @@ section .item-concurso a {
   padding: 0.625rem 0.9375rem;
   font-family: var(--ffprimaria);
   font-style: bold;
+  border-top: 0.35rem solid var(--azul);
+  border-bottom: 0.05rem solid rgb(248, 230, 230);
 }
 
 #alert-vagas {
   font-size: 2.25rem;
+  margin-top: 0.4rem;
 }
 
 #alert-valor {
