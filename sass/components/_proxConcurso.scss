@@ -5,14 +5,23 @@
   grid-template-columns: 1fr;
   width: 100%;
   background-color: #EDEDED;
+  margin-top: 3rem;
+  border: 0.3px solid rgb(233, 225, 225);
+  border-bottom: none;
 
 }
 
 section{
+  .title-card{
+    font-size: 1.10rem;
+    font-family: var(--ffprimaria);
+    margin-bottom: 1.3rem;
+    margin-top: 1.5rem;
+  }
 
   .item-concurso{
-  width:15.63rem;
-  height: 12.50rem;
+  width: 24rem;
+  height: 16rem;
   border: none;
   line-height: 2.5rem;
   margin: 0.62rem 0;
@@ -22,19 +31,32 @@ section{
   border-radius: 0.62rem;
   box-shadow: 0 0 4px 0 #d9dde0;
   background-color: white;
-  color:#43458b
+  color:var(--preto);
 }
 
-.btn-concurso{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.25rem;
-  background-color: var(--preto);
-  color: white;
-  width: 12.50rem;
-  border-radius: 0.62rem;
-  cursor: pointer;
-  height: 2.50rem;
+  .item-concurso a{
+    text-decoration: none;
+    color: var(--preto);
+  }
+
 }
+
+
+#item-title-card{
+  font-size: 0.75rem;
+  padding: 0.625rem 0.9375rem;
+  font-family: var(--ffprimaria);
+  font-style: bold;
+}
+
+#alert-vagas{
+  font-size: 2.25rem;
+
+}
+
+#alert-valor{
+  font-size: 1.8rem;
+
 }
 
 .container-vantagens{
@@ -65,6 +87,7 @@ section{
   background-color: white;
   
 }
+
 }
 
 .item-vantagens:hover{
