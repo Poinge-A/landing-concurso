@@ -13,15 +13,16 @@
 }
 
 .valor-destaque1 {
-  color: red;
-  font-weight: bold;
-  font-size: 130%;
+  margin: 0;
+  text-decoration: line-through;
+  font-family: var(--ffprimaria);
 }
 
 .valor-destaque2 {
-  color:green;
+  color:black;
   font-weight: bold;
-  font-size: 180%;
+  font-size: 240%;
+  font-family: var(--ffprimaria);
 }
 
 .plano {
@@ -46,21 +47,32 @@
   max-width: 30ch;
 }
 
-.plano-content p{
+.plano-content p, .plano-content h4, .plano-content ul{
   margin: 1rem;
 }
 
+.plano-content li {
+  margin: .2rem 1rem;
+}
+
+
 .plano-button {
-  font-size: 140%;
+  font-size: 120%;
   border-radius: 2rem;
   padding: 0.2rem 2rem;
   background-color: var(--azul);
   color: var(--branco);
-  font-family: var(--ffprimaria);
-  font-weight: bold;
+  font-family: var(--ffsecond);
 }
 
-.plano h3 {
+.plano-name {
   font-family: var(--ffprimaria);
   font-size: 180%;
 }
+
+.plano-benefic {
+  font-family: var(--ffprimaria);
+  font-size:120%;
+  font-weight: bold;
+}
+
