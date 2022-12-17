@@ -136,18 +136,29 @@ main {
 
         
 
-        height:60rem;
+        height:80rem;
         box-shadow: 0 0 4px 0 #d9dde0;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        background-color: var(--preto);
-
+        background-color: var(--azul-s5);
+        font-family: var(--ffprimaria);
+        text-align: center;
         h1 {
 
             color: var(--branco);
+
         }
+
+        p {
+
+            color: var(--branco);
+            width: 90%;
+            font-size: .9rem;
+
+        }
+
 
         .cards-highlights {
 
@@ -165,88 +176,83 @@ main {
 
             .highlights-card-1 {
 
+                background-image: url(../../assets/img/pessoa1.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center top;
+                background-position-y: 2rem;
+                padding-top: .3rem;
+
                 background-color: var(--branco);
+
+                box-shadow: 0 0 4px 0 #d9dde0;
+
+                border-top: 7px solid var(--preto);
                 
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: space-evenly;
 
                 border-radius: 0.5rem;
 
-                height: 15rem;
+                height: 20rem;
                 width: 16rem;
 
-
-                button {
-
-                    border: none;
-
-                    padding: .5rem;
-                    border-radius: .3rem;
-
-                    background-color: var(--azul);
-                    color: var(--branco);
-                }
 
             }
 
             .highlights-card-2 {
 
+                background-image: url(../../assets/img/pessoa2.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center top;
+                background-position-y: 2rem;
+                padding-top: .3rem;
+
                 background-color: var(--branco);
 
+                box-shadow: 0 0 4px 0 #d9dde0;
+
+                border-top: 7px solid var(--azul-s6);
+                
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: space-evenly;
 
                 border-radius: 0.5rem;
 
-                height: 15rem;
+                height: 20rem;
                 width: 16rem;
 
-                button {
-
-                    border: none;
-
-                    padding: .5rem;
-                    border-radius: .3rem;
-
-                    background-color: var(--azul);
-                    color: var(--branco);
-                }
             }
 
             .highlights-card-3 {
 
+                background-image: url(../../assets/img/pessoa3.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center top;
+                background-position-y: 2rem;
+                padding-top: .3rem;
+
                 background-color: var(--branco);
 
+                box-shadow: 0 0 4px 0 #d9dde0;
+
+                border-top: 7px solid rgb(0, 82, 91);
+                
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: space-evenly;
 
                 border-radius: 0.5rem;
 
-                height: 15rem;
+                height: 20rem;
                 width: 16rem;
 
-                button {
-
-                    border: none;
-
-                    padding: .5rem;
-                    border-radius: .3rem;
-
-                    background-color: var(--azul);
-                    color: var(--branco);
-                }
-            }
         }
     }
 }
-
-
-@media (max-width: 768px) {
 
 }
