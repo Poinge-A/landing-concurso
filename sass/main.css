@@ -212,34 +212,43 @@ main .c-destaques .cards-highlights .highlights-card-3 {
 }
 
 .container {
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
+  font-family: var(--ffprimaria);
 }
 
 .container .card {
-  border: 1px solid #0E79B2;
-  padding: 3vh;
   margin: 1vh;
   position: relative;
-  width: 70vw;
-  text-align: center;
+  width: 95vw;
+  height: 20vh;
+  text-align: left;
   border-radius: 20px;
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .container .card p {
-  padding: 10px 5px;
+  width: 60vw;
 }
 
-.btn-depoimento {
-  background-color: var(--preto);
-  color: var(--branco);
-  width: 12.5rem;
-  height: 2.5rem;
-  border-radius: 0.65rem;
+.card .icon {
+  width: 5rem;
+  height: 5rem;
+}
+
+.card img {
+  height: 100%;
+  border-radius: 100%;
+}
+
+.container h3 {
+  margin-top: 2rem;
 }
 
 .container-prox-concurso {
@@ -406,4 +415,6 @@ section .item-vantagens {
   font-family: var(--ffprimaria);
   font-size: 120%;
   font-weight: bold;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
