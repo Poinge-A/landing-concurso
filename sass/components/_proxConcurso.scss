@@ -19,7 +19,7 @@ section{
     margin-top: 1.5rem;
   }
 
-  .item-concurso{
+  .card-concurso{
   width: 16rem;
   height: 16rem;
   border: none;
@@ -34,7 +34,7 @@ section{
   color:var(--preto);
 }
 
-  .item-concurso a{
+  .card-concurso a{
     text-decoration: none;
     color: var(--preto);
   }
@@ -66,7 +66,7 @@ section{
   place-items: center;
   grid-template-columns: 1fr;
   margin-top: 1.25rem;
-  background-color: var(--preto);
+  background-color: var(--azul-s5);
   width: 100%;
   
 
@@ -74,7 +74,7 @@ section{
 
 section{  
 
-  .item-vantagens{
+  .card-vantagens{
   width:15.63rem;
   height: 12.50rem;
   box-shadow: 0 0 4px 0 #d9dde0;
@@ -92,12 +92,12 @@ section{
 
 }
 
-.item-vantagens:hover{
+.card-vantagens:hover{
   box-shadow:0 3px 8px 0 #b5babdbf;
   transform: scale(1.1);
   transition: transform 500ms;
 }
-.item-concurso:hover{
+.card-concurso:hover{
   box-shadow:0 3px 8px 0 #b5babdbf;
   transform: scale(1.1);
   transition: transform 500ms;
