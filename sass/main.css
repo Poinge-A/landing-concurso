@@ -132,7 +132,7 @@ main .hero .elements-hero p {
 }
 main .c-destaques {
   height: 80rem;
-  box-shadow: 0 0 4px 0 #d9dde0;
+  box-shadow: 0 0 4px 0 var(--azul-s6);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -270,7 +270,7 @@ section .title-card {
   margin-bottom: 1.3rem;
   margin-top: 1.5rem;
 }
-section .item-concurso {
+section .card-concurso {
   width: 16rem;
   height: 16rem;
   border: none;
@@ -284,7 +284,7 @@ section .item-concurso {
   background-color: white;
   color: var(--preto);
 }
-section .item-concurso a {
+section .card-concurso a {
   text-decoration: none;
   color: var(--preto);
 }
@@ -316,7 +316,7 @@ section .item-concurso a {
   width: 100%;
 }
 
-section .item-vantagens {
+section .card-vantagens {
   width: 15.63rem;
   height: 12.5rem;
   box-shadow: 0 0 4px 0 #d9dde0;
@@ -331,13 +331,13 @@ section .item-vantagens {
   background-color: white;
 }
 
-.item-vantagens:hover {
+.card-vantagens:hover {
   box-shadow: 0 3px 8px 0 rgba(181, 186, 189, 0.7490196078);
   transform: scale(1.1);
   transition: transform 500ms;
 }
 
-.item-concurso:hover {
+.card-concurso:hover {
   box-shadow: 0 3px 8px 0 rgba(181, 186, 189, 0.7490196078);
   transform: scale(1.1);
   transition: transform 500ms;
@@ -351,7 +351,7 @@ section .item-vantagens {
 }
 
 #section-planos {
-  background-color: var(--preto);
+  background-color: var(--azul-s5);
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -401,7 +401,9 @@ section .item-vantagens {
 
 .plano-button {
   font-size: 120%;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 0 4px 0 var(--azul-s6);
   padding: 0.2rem 2rem;
   background-color: var(--azul);
   color: var(--branco);
@@ -417,6 +419,4 @@ section .item-vantagens {
   font-family: var(--ffprimaria);
   font-size: 120%;
   font-weight: bold;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
