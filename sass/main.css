@@ -85,7 +85,7 @@ main .hero {
   height: 30rem;
   align-items: center;
   background-color: #3d52af;
-  background-image: url(/assets/img/img-hero3.jpg);
+  background-image: url(../assets/img/img-hero3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -162,7 +162,7 @@ main .c-destaques .cards-highlights span {
   font-weight: 700;
 }
 main .c-destaques .cards-highlights .highlights-card-1 {
-  background-image: url(../../assets/img/pessoa1.png);
+  background-image: url(../assets/img/pessoa1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -179,7 +179,7 @@ main .c-destaques .cards-highlights .highlights-card-1 {
   width: 16rem;
 }
 main .c-destaques .cards-highlights .highlights-card-2 {
-  background-image: url(../../assets/img/pessoa2.png);
+  background-image: url(../assets/img/pessoa2.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -196,7 +196,7 @@ main .c-destaques .cards-highlights .highlights-card-2 {
   width: 16rem;
 }
 main .c-destaques .cards-highlights .highlights-card-3 {
-  background-image: url(../../assets/img/pessoa3.png);
+  background-image: url(../assets/img/pessoa3.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -332,7 +332,6 @@ section .card-concurso a {
 section .card-vantagens {
   text-align: center;
   margin-top: 0.8rem;
-  box-shadow: 0 0 4px 0 var(--azul-s6);
   width: 16rem;
   height: 33vh;
   border: none;
