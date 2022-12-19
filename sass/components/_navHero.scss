@@ -85,7 +85,7 @@ nav {
 
 main {
 
-    padding-top: 5rem;
+    padding-top: 4rem;
 
 
     .hero {
@@ -123,7 +123,7 @@ main {
                 border-radius: .5rem;
                 margin-top: 2rem;
                 color: var(--branco);
-                background-color: blue;
+                background-color: var(--azul-s4);
                 font-weight: 700;
                 box-shadow: -3px 7px 7px 1px var(--preto);
             }
@@ -186,7 +186,6 @@ main {
         .cards-highlights {
 
             justify-items: center;
-            gap: 1rem;
 
             font-family: var(--ffprimaria);
 
@@ -309,6 +308,7 @@ main {
 
             display: grid;
             grid-template-columns: 1fr;
+            gap: 2rem;
         }
     }
 }
@@ -328,6 +328,18 @@ main {
     #btn-hero {
 
         width: 10rem;
+    }
+
+    .c-destaques {
+
+        height: 80rem;
+
+        .cards-highlights {
+
+            gap: 2rem;
+            display: flex;
+            flex-direction: column;
+        }
     }
 }
 
