@@ -160,7 +160,7 @@ main .c-destaques h1 {
 main .c-destaques p {
   color: var(--branco);
   width: 90%;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 main .c-destaques .cards-highlights {
   justify-items: center;
