@@ -40,6 +40,20 @@ nav {
   width: 100%;
   z-index: 100;
 }
+nav .menu-desktop {
+  font-family: var(--ffprimaria);
+}
+nav .menu-desktop ul {
+  display: flex;
+  list-style: none;
+}
+nav .menu-desktop ul li {
+  margin-left: 3rem;
+}
+nav .menu-desktop ul li a {
+  text-decoration: none;
+  color: var(--preto);
+}
 nav #open-menu-btn {
   border: none;
   background-color: transparent;
@@ -55,8 +69,8 @@ nav .menu-list {
   z-index: 1;
   top: 100%;
   right: 0;
-  height: 100%;
-  width: 60vw;
+  height: 50vh;
+  width: 50vw;
   justify-content: center;
   display: none;
 }
@@ -213,6 +227,16 @@ main .c-destaques .cards-highlights .highlights-card-3 {
   width: 16rem;
 }
 
+@media screen and (min-width: 801px) {
+  .buttons {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .menu-desktop {
+    display: none;
+  }
+}
 .container {
   display: flex;
   align-items: center;

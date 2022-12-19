@@ -1,6 +1,29 @@
 // Barra de Navegação
 nav {
 
+    .menu-desktop {
+
+        font-family: var(--ffprimaria);
+
+        ul {
+
+            display: flex;
+
+            list-style: none;
+
+            li {
+
+                margin-left: 3rem;
+
+                a {
+
+                    text-decoration: none;
+                    color: var(--preto);
+                }
+            }
+        }
+    }
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,8 +55,8 @@ nav {
         z-index: 1;
         top: 100%;
         right: 0;
-        height: 100%;
-        width: 60vw;
+        height: 50vh;
+        width: 50vw;
         justify-content: center;
         display: none;
 
@@ -258,4 +281,21 @@ main {
     }
 }
 
+}
+
+
+@media screen and (min-width: 801px) {
+
+    .buttons {
+
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .menu-desktop {
+
+        display: none;
+    }
 }

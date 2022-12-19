@@ -36,7 +36,6 @@ function navHeroJs() {
     
     menuBtn.addEventListener('click', () => {
       menu.style.display = 'flex';
-      menu.style.height = '90vh'
       closeBtn.style.display = 'inline-block';
       menuBtn.style.display = 'none';
     });
