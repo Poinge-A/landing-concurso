@@ -231,9 +231,18 @@ main .c-destaques .cards-highlights .highlights-card-3 {
   .buttons {
     display: none;
   }
+  nav {
+    position: relative;
+  }
+  main {
+    padding-top: 0;
+  }
 }
 @media screen and (max-width: 800px) {
   .menu-desktop {
+    display: none;
+  }
+  .menu-list {
     display: none;
   }
 }
