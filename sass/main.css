@@ -90,7 +90,7 @@ nav .menu-list li a {
 }
 
 main {
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
 main .hero {
   width: 100%;
@@ -123,7 +123,7 @@ main .hero .card-hero #btn-hero {
   border-radius: 0.5rem;
   margin-top: 2rem;
   color: var(--branco);
-  background-color: blue;
+  background-color: var(--azul-s4);
   font-weight: 700;
   box-shadow: -3px 7px 7px 1px var(--preto);
 }
@@ -160,11 +160,10 @@ main .c-destaques h1 {
 main .c-destaques p {
   color: var(--branco);
   width: 90%;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 main .c-destaques .cards-highlights {
   justify-items: center;
-  gap: 1rem;
   font-family: var(--ffprimaria);
 }
 main .c-destaques .cards-highlights span {
@@ -241,6 +240,7 @@ main .c-destaques .cards-highlights .highlights-card-3 {
   .c-destaques .cards-highlights {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }
 @media screen and (max-width: 800px) {
@@ -252,6 +252,14 @@ main .c-destaques .cards-highlights .highlights-card-3 {
   }
   #btn-hero {
     width: 10rem;
+  }
+  .c-destaques {
+    height: 80rem;
+  }
+  .c-destaques .cards-highlights {
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
   }
 }
 @media screen and (min-width: 1000px) {
