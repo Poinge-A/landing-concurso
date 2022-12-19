@@ -119,7 +119,6 @@ main .hero .card-hero #btn-hero {
   justify-content: center;
   border: none;
   height: 2rem;
-  width: 10rem;
   border-radius: 0.5rem;
   margin-top: 2rem;
   color: var(--branco);
@@ -237,6 +236,9 @@ main .c-destaques .cards-highlights .highlights-card-3 {
   main {
     padding-top: 0;
   }
+  #btn-hero {
+    width: 25%;
+  }
 }
 @media screen and (max-width: 800px) {
   .menu-desktop {
@@ -244,6 +246,9 @@ main .c-destaques .cards-highlights .highlights-card-3 {
   }
   .menu-list {
     display: none;
+  }
+  #btn-hero {
+    width: 10rem;
   }
 }
 .container {

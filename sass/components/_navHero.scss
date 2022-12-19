@@ -118,7 +118,7 @@ main {
                 justify-content: center;
                 border: none;
                 height: 2rem;
-                width: 10rem;
+            
                 border-radius: .5rem;
                 margin-top: 2rem;
                 color: var(--branco);
@@ -300,6 +300,11 @@ main {
 
         padding-top: 0;
     }
+
+    #btn-hero {
+
+        width: 25%;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -312,5 +317,10 @@ main {
     .menu-list {
 
         display: none;
+    }
+
+    #btn-hero {
+
+        width: 10rem;
     }
 }
