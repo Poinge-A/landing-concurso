@@ -1,6 +1,29 @@
 // Barra de Navegação
 nav {
 
+    .menu-desktop {
+
+        font-family: var(--ffprimaria);
+
+        ul {
+
+            display: flex;
+
+            list-style: none;
+
+            li {
+
+                margin-left: 3rem;
+
+                a {
+
+                    text-decoration: none;
+                    color: var(--preto);
+                }
+            }
+        }
+    }
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,8 +55,8 @@ nav {
         z-index: 1;
         top: 100%;
         right: 0;
-        height: 100%;
-        width: 60vw;
+        height: 50vh;
+        width: 50vw;
         justify-content: center;
         display: none;
 
@@ -95,7 +118,7 @@ main {
                 justify-content: center;
                 border: none;
                 height: 2rem;
-                width: 10rem;
+            
                 border-radius: .5rem;
                 margin-top: 2rem;
                 color: var(--branco);
@@ -254,8 +277,50 @@ main {
                 height: 20rem;
                 width: 16rem;
 
+            }
         }
+    }
+
+}
+
+
+@media screen and (min-width: 801px) {
+
+    .buttons {
+
+        display: none;
+    }
+
+    nav {
+
+        position: relative;
+    }
+
+    main {
+
+        padding-top: 0;
+    }
+
+    #btn-hero {
+
+        width: 25%;
     }
 }
 
+@media screen and (max-width: 800px) {
+
+    .menu-desktop {
+
+        display: none;
+    }
+
+    .menu-list {
+
+        display: none;
+    }
+
+    #btn-hero {
+
+        width: 10rem;
+    }
 }
