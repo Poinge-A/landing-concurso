@@ -1,6 +1,14 @@
 // Barra de Navegação
 nav {
 
+    .logo {
+
+        a {
+
+            color: black;
+        }
+    }
+
     .menu-desktop {
 
         font-family: var(--ffprimaria);
@@ -127,6 +135,12 @@ main {
                 background-color: var(--azul-s4);
                 font-weight: 700;
                 box-shadow: -3px 7px 7px 1px var(--preto);
+
+                a {
+
+                    color: var(--branco);
+                    text-decoration: none;
+                }
             }
         }
 
@@ -283,6 +297,7 @@ main {
     .c-destaques {
 
         height: 80rem;
+
     }
 }
 

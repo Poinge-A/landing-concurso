@@ -40,6 +40,9 @@ nav {
   width: 100%;
   z-index: 100;
 }
+nav .logo a {
+  color: black;
+}
 nav .menu-desktop {
   font-family: var(--ffprimaria);
 }
@@ -127,6 +130,10 @@ main .hero .card-hero #btn-hero {
   background-color: var(--azul-s4);
   font-weight: 700;
   box-shadow: -3px 7px 7px 1px var(--preto);
+}
+main .hero .card-hero #btn-hero a {
+  color: var(--branco);
+  text-decoration: none;
 }
 main .hero .elements-hero {
   display: flex;
@@ -222,19 +229,12 @@ main .c-destaques .cards-highlights .highlights-card-3 {
   width: 16rem;
 }
 
-<<<<<<< Updated upstream
-@media (min-width: 768px) {
-=======
 @media (min-width: 320px) {
   .c-destaques {
     height: 80rem;
   }
 }
-@media (min-width: 788px) {
-  nav .menu-desktop {
-    display: flex;
-  }
->>>>>>> Stashed changes
+@media (min-width: 768px) {
   .buttons {
     display: none;
   }
@@ -348,6 +348,7 @@ main .c-destaques .cards-highlights .highlights-card-3 {
   margin-top: 3rem;
   border: 0.3px solid rgb(233, 225, 225);
   border-bottom: none;
+  margin-bottom: 2rem;
 }
 
 section .title-card {
@@ -387,7 +388,7 @@ section .card-concurso a {
 
 .alert-vagas {
   font-size: 2.25rem;
-  margin-top: 0.4rem;
+  margin-top: 1rem;
 }
 
 .alert-valor {
@@ -450,6 +451,36 @@ section p {
   transition: transform 500ms;
 }
 
+@media screen and (min-width: 1000px) {
+  .concurso-card-responsive {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+  .vantagens-card-responsive {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+  }
+  .card-vantagens h2 {
+    margin-bottom: 0.8rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .concurso-card-responsive {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+  .vantagens-card-responsive {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+  }
+  .card-vantagens h2 {
+    margin-bottom: 0.8rem;
+  }
+}
 .planos-title {
   color: var(--branco);
   font-family: var(--ffprimaria);
@@ -526,6 +557,4 @@ section p {
   font-family: var(--ffprimaria);
   font-size: 120%;
   font-weight: bold;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
