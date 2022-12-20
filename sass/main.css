@@ -45,6 +45,7 @@ nav .logo a {
   color: var(--preto);
 }
 nav .menu-desktop {
+  display: none;
   font-family: var(--ffprimaria);
 }
 nav .menu-desktop ul {
@@ -161,6 +162,7 @@ main .c-destaques {
   text-align: center;
   border-top: 0.1rem solid black;
   border-bottom: 0.1rem solid black;
+  height: 80rem;
 }
 main .c-destaques h1 {
   color: var(--branco);
@@ -229,7 +231,10 @@ main .c-destaques .cards-highlights .highlights-card-3 {
   width: 16rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 788px) {
+  nav .menu-desktop {
+    display: flex;
+  }
   .buttons {
     display: none;
   }

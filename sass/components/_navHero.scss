@@ -5,6 +5,7 @@ nav {
         color: var(--preto);
     }
     .menu-desktop {
+        display: none;
 
         font-family: var(--ffprimaria);
 
@@ -172,6 +173,7 @@ main {
         text-align: center;
         border-top: 0.1rem solid black;
         border-bottom: 0.1rem solid black;
+        height: 80rem;
         
         h1 {
 
@@ -283,7 +285,15 @@ main {
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 788px) {
+
+    nav {
+
+        .menu-desktop {
+
+            display: flex;
+        }
+    }
 
     .buttons {
 
