@@ -119,6 +119,7 @@ main {
                 border: none;
                 font-size: 1rem;
                 height: 2rem;
+                width: 12rem;
             
                 border-radius: .5rem;
                 margin-top: 2rem;
@@ -275,6 +276,14 @@ main {
         }
     }
 
+}
+
+@media (min-width: 320px) {
+
+    .c-destaques {
+
+        height: 80rem;
+    }
 }
 
 

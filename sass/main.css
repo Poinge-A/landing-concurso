@@ -120,6 +120,7 @@ main .hero .card-hero #btn-hero {
   border: none;
   font-size: 1rem;
   height: 2rem;
+  width: 12rem;
   border-radius: 0.5rem;
   margin-top: 2rem;
   color: var(--branco);
@@ -221,7 +222,19 @@ main .c-destaques .cards-highlights .highlights-card-3 {
   width: 16rem;
 }
 
+<<<<<<< Updated upstream
 @media (min-width: 768px) {
+=======
+@media (min-width: 320px) {
+  .c-destaques {
+    height: 80rem;
+  }
+}
+@media (min-width: 788px) {
+  nav .menu-desktop {
+    display: flex;
+  }
+>>>>>>> Stashed changes
   .buttons {
     display: none;
   }
