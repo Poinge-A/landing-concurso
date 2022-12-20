@@ -40,12 +40,7 @@ nav {
   width: 100%;
   z-index: 100;
 }
-nav .logo a {
-  text-decoration: none;
-  color: var(--preto);
-}
 nav .menu-desktop {
-  display: none;
   font-family: var(--ffprimaria);
 }
 nav .menu-desktop ul {
@@ -104,7 +99,7 @@ main .hero {
   height: 30rem;
   align-items: center;
   background-color: #3d52af;
-  background-image: url(../assets/img/img-hero3.jpg);
+  background-image: url(../../assets/img/img-hero3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -119,10 +114,6 @@ main .hero .card-hero {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-main .hero .card-hero a {
-  color: var(--branco);
-  text-decoration: none;
 }
 main .hero .card-hero #btn-hero {
   justify-content: center;
@@ -162,7 +153,6 @@ main .c-destaques {
   text-align: center;
   border-top: 0.1rem solid black;
   border-bottom: 0.1rem solid black;
-  height: 80rem;
 }
 main .c-destaques h1 {
   color: var(--branco);
@@ -231,10 +221,7 @@ main .c-destaques .cards-highlights .highlights-card-3 {
   width: 16rem;
 }
 
-@media (min-width: 788px) {
-  nav .menu-desktop {
-    display: flex;
-  }
+@media (min-width: 768px) {
   .buttons {
     display: none;
   }
@@ -245,7 +232,7 @@ main .c-destaques .cards-highlights .highlights-card-3 {
     padding-top: 0;
   }
   #btn-hero {
-    width: 15rem;
+    width: 25%;
   }
   .c-destaques {
     height: 80rem;
@@ -256,7 +243,26 @@ main .c-destaques .cards-highlights .highlights-card-3 {
     gap: 2rem;
   }
 }
-@media (min-width: 1024px) {
+@media (max-width: 767px) {
+  .menu-desktop {
+    display: none;
+  }
+  .menu-list {
+    display: none;
+  }
+  #btn-hero {
+    width: 10rem;
+  }
+  .c-destaques {
+    height: 80rem;
+  }
+  .c-destaques .cards-highlights {
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1000px) {
   .elements-hero h1 {
     font-size: 3rem;
   }
@@ -274,48 +280,52 @@ main .c-destaques .cards-highlights .highlights-card-3 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-.container {
+.container-depoimentos {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+.container-depoimentos #depoimentos {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.container-depoimentos .cards {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   flex-wrap: wrap;
-  font-family: var(--ffprimaria);
-  border-top: 1px solid rgb(233, 225, 225);
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0.75rem;
 }
 
-.container .card {
-  width: 95vw;
-  margin-bottom: 2rem;
-  text-align: left;
-  border-radius: 20px;
-  font-size: 0.7rem;
+.container-depoimentos .cards .card {
+  padding: 0.5rem;
+  gap: 0.5rem;
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  max-width: 20rem;
+  height: 14rem;
 }
 
-.container .card p {
-  width: 60vw;
-}
-
-.card .icon {
-  width: 5rem;
-  height: 5rem;
-}
-
-.card img {
-  height: 100%;
+.container-depoimentos .cards .card .icone {
+  max-width: 80px;
   border-radius: 100%;
+  border: 2px solid #62A8CD;
 }
 
-.container h3 {
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  font-size: 1.1rem;
-  justify-content: center;
+.container-depoimentos .card p {
+  max-width: 12rem;
+  text-align: left;
 }
 
+@media (min-width: 768px) {
+  .container-depoimentos .card:hover {
+    box-shadow: 0 3px 8px 0 rgba(181, 186, 189, 0.7490196078);
+    transform: scale(1.1);
+    border: 1px groove #62A8CD;
+    transition: transform 500ms;
+  }
+}
 .container-prox-concurso {
   display: grid;
   place-items: center;
@@ -325,7 +335,6 @@ main .c-destaques .cards-highlights .highlights-card-3 {
   margin-top: 3rem;
   border: 0.3px solid rgb(233, 225, 225);
   border-bottom: none;
-  margin-bottom: 2rem;
 }
 
 section .title-card {
@@ -365,7 +374,7 @@ section .card-concurso a {
 
 .alert-vagas {
   font-size: 2.25rem;
-  margin-top: 1rem;
+  margin-top: 0.4rem;
 }
 
 .alert-valor {
@@ -428,36 +437,6 @@ section p {
   transition: transform 500ms;
 }
 
-@media screen and (min-width: 1000px) {
-  .concurso-card-responsive {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-  }
-  .vantagens-card-responsive {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.8rem;
-  }
-  .card-vantagens h2 {
-    margin-bottom: 0.8rem;
-  }
-}
-@media screen and (min-width: 800px) {
-  .concurso-card-responsive {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-  }
-  .vantagens-card-responsive {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.8rem;
-  }
-  .card-vantagens h2 {
-    margin-bottom: 0.8rem;
-  }
-}
 .planos-title {
   color: var(--branco);
   font-family: var(--ffprimaria);
@@ -534,4 +513,6 @@ section p {
   font-family: var(--ffprimaria);
   font-size: 120%;
   font-weight: bold;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */

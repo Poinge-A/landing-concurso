@@ -1,51 +1,46 @@
-
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    // width: 100vw;
-    flex-direction: column;
-    flex-wrap: wrap;
-    font-family: var(--ffprimaria);
-    // height: 100vh;
-    border-top: 1px solid rgb(233, 225, 225);   
+.container-depoimentos {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
-.container .card {
-    width: 95vw;
-    margin-bottom: 2rem;
-    text-align: left;
-    border-radius: 20px;
-    font-size: 0.7rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    // background-color: var(--azul-s1);
-    // border: 2px groove var(--azul-s1);
+.container-depoimentos #depoimentos {
+  text-align: center;
+  font-size: 1.5rem;
 }
 
-.container .card p {
-    width: 60vw;
+.container-depoimentos .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0.75rem;
 }
 
-.card .icon {
-    width: 5rem;
-    height: 5rem;
-    
+.container-depoimentos .cards .card {
+  padding: 0.5rem;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 20rem;
+  height: 14rem;
 }
 
-.card img {
-    // width: 100%;
-    height: 100%;
-    border-radius: 100%;
-
+.container-depoimentos .cards .card .icone {
+  max-width: 80px;
+  border-radius: 100%;
+  border: 2px solid #62A8CD;
 }
 
-.container h3 {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    font-size: 1.10rem;
-    justify-content: center;
+.container-depoimentos .card p {
+  max-width: 12rem;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .container-depoimentos .card:hover {
+    box-shadow:0 3px 8px 0 #b5babdbf;
+    transform: scale(1.1);
+    border: 1px groove #62A8CD;;
+    transition: transform 500ms;
+  }
 }
