@@ -283,7 +283,7 @@ main {
 }
 
 
-@media screen and (min-width: 801px) {
+@media (min-width: 768px) {
 
     .buttons {
 
@@ -302,7 +302,7 @@ main {
 
     #btn-hero {
 
-        width: 25%;
+        width: 15rem;
     }
 
     .c-destaques {
@@ -318,37 +318,37 @@ main {
     }
 }
 
-@media screen and (max-width: 800px) {
+// @media screen and (max-width: 800px) {
 
-    .menu-desktop {
+//     .menu-desktop {
 
-        display: none;
-    }
+//         display: none;
+//     }
 
-    .menu-list {
+//     .menu-list {
 
-        display: none;
-    }
+//         display: none;
+//     }
 
-    #btn-hero {
+//     #btn-hero {
 
-        width: 10rem;
-    }
+//         width: 10rem;
+//     }
 
-    .c-destaques {
+//     .c-destaques {
 
-        height: 80rem;
+//         height: 80rem;
 
-        .cards-highlights {
+//         .cards-highlights {
 
-            gap: 2rem;
-            display: flex;
-            flex-direction: column;
-        }
-    }
-}
+//             gap: 2rem;
+//             display: flex;
+//             flex-direction: column;
+//         }
+//     }
+// }
 
-@media screen and (min-width: 1000px) {
+@media (min-width: 1024px) {
 
     .elements-hero {
 
