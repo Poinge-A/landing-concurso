@@ -40,6 +40,10 @@ nav {
   width: 100%;
   z-index: 100;
 }
+nav .logo a {
+  text-decoration: none;
+  color: var(--preto);
+}
 nav .menu-desktop {
   font-family: var(--ffprimaria);
 }
@@ -114,6 +118,10 @@ main .hero .card-hero {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+main .hero .card-hero a {
+  color: var(--branco);
+  text-decoration: none;
 }
 main .hero .card-hero #btn-hero {
   justify-content: center;
@@ -331,6 +339,7 @@ main .c-destaques .cards-highlights .highlights-card-3 {
   margin-top: 3rem;
   border: 0.3px solid rgb(233, 225, 225);
   border-bottom: none;
+  margin-bottom: 2rem;
 }
 
 section .title-card {
@@ -370,7 +379,7 @@ section .card-concurso a {
 
 .alert-vagas {
   font-size: 2.25rem;
-  margin-top: 0.4rem;
+  margin-top: 1rem;
 }
 
 .alert-valor {
@@ -433,6 +442,36 @@ section p {
   transition: transform 500ms;
 }
 
+@media screen and (min-width: 1000px) {
+  .concurso-card-responsive {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+  .vantagens-card-responsive {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+  }
+  .card-vantagens h2 {
+    margin-bottom: 0.8rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .concurso-card-responsive {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+  .vantagens-card-responsive {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+  }
+  .card-vantagens h2 {
+    margin-bottom: 0.8rem;
+  }
+}
 .planos-title {
   color: var(--branco);
   font-family: var(--ffprimaria);
