@@ -95,7 +95,7 @@ main {
         height: 30rem;
         align-items: center;
         background-color: #3d52af;
-        background-image: url(../assets/img/img-hero3.jpg) ;
+        background-image: url(../../assets/img/img-hero3.jpg) ;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center top;
@@ -278,7 +278,7 @@ main {
 }
 
 
-@media screen and (min-width: 801px) {
+@media (min-width: 768px) {
 
     .buttons {
 
@@ -313,7 +313,7 @@ main {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 767px) {
 
     .menu-desktop {
 
@@ -343,7 +343,7 @@ main {
     }
 }
 
-@media screen and (min-width: 1000px) {
+@media (min-width: 1000px) {
 
     .elements-hero {
 

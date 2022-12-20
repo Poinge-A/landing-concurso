@@ -1,29 +1,46 @@
-.container {
-    display: flex;
-    // justify-content: center;
-    flex-flow: column;
-    text-align: center;
+.container-depoimentos {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
-.container .card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 1.5rem 1rem;
-
+.container-depoimentos #depoimentos {
+  text-align: center;
+  font-size: 1.5rem;
 }
 
-.card .icon {
-    width: 80px;
-    border-radius: 100%;
+.container-depoimentos .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0.75rem;
 }
 
-.card .texto {
-    padding: 0 0.7rem;
+.container-depoimentos .cards .card {
+  padding: 0.5rem;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 20rem;
+  height: 14rem;
 }
 
-.card .texto p {
-    text-align: left;
-    // width: 100%;
-    font-size: 0.75rem;
+.container-depoimentos .cards .card .icone {
+  max-width: 80px;
+  border-radius: 100%;
+  border: 2px solid #62A8CD;
+}
+
+.container-depoimentos .card p {
+  max-width: 12rem;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .container-depoimentos .card:hover {
+    box-shadow:0 3px 8px 0 #b5babdbf;
+    transform: scale(1.1);
+    border: 1px groove #62A8CD;;
+    transition: transform 500ms;
+  }
 }

@@ -9,6 +9,7 @@ function navHeroJs() {
     const list2 = document.querySelector('.list2')
     const list3 = document.querySelector('.list3')
     const list4 = document.querySelector('.list4')
+    const list5 = document.querySelector('.list5')
 
     list1.addEventListener('click', () => {
       menu.style.display = 'none';
@@ -29,6 +30,12 @@ function navHeroJs() {
     })
 
     list4.addEventListener('click', () => {
+      menu.style.display = 'none';
+      closeBtn.style.display = 'none';
+      menuBtn.style.display = 'inline-block';
+    })
+    
+    list5.addEventListener('click', () => {
       menu.style.display = 'none';
       closeBtn.style.display = 'none';
       menuBtn.style.display = 'inline-block';
