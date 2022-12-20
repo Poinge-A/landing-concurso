@@ -1,6 +1,29 @@
 // Barra de Navegação
 nav {
 
+    .menu-desktop {
+
+        font-family: var(--ffprimaria);
+
+        ul {
+
+            display: flex;
+
+            list-style: none;
+
+            li {
+
+                margin-left: 3rem;
+
+                a {
+
+                    text-decoration: none;
+                    color: var(--preto);
+                }
+            }
+        }
+    }
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,8 +55,8 @@ nav {
         z-index: 1;
         top: 100%;
         right: 0;
-        height: 100%;
-        width: 60vw;
+        height: 50vh;
+        width: 50vw;
         justify-content: center;
         display: none;
 
@@ -62,7 +85,7 @@ nav {
 
 main {
 
-    padding-top: 5rem;
+    padding-top: 4rem;
 
 
     .hero {
@@ -72,7 +95,7 @@ main {
         height: 30rem;
         align-items: center;
         background-color: #3d52af;
-        background-image: url(/assets/img/img-hero3.jpg) ;
+        background-image: url(../assets/img/img-hero3.jpg) ;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center top;
@@ -94,12 +117,13 @@ main {
             #btn-hero {
                 justify-content: center;
                 border: none;
+                font-size: 1rem;
                 height: 2rem;
-                width: 10rem;
+            
                 border-radius: .5rem;
                 margin-top: 2rem;
                 color: var(--branco);
-                background-color: blue;
+                background-color: var(--azul-s4);
                 font-weight: 700;
                 box-shadow: -3px 7px 7px 1px var(--preto);
             }
@@ -113,7 +137,6 @@ main {
             margin-top: 8rem;
             
             h1 {
-                font-size: 2.32rem;
                 color: rgb(255, 255, 255);
                 text-align: center;
                 //text-shadow: -10px 7px 10px var(--preto);
@@ -125,7 +148,6 @@ main {
                 margin-top: 1rem;
                 color: white;
                 text-align: center;
-                font-size: 1rem;
             }
         } 
     }
@@ -135,8 +157,6 @@ main {
     .c-destaques {
 
         
-
-        height:80rem;
         box-shadow: 0 0 4px 0 var(--azul-s6);
         display: flex;
         flex-direction: column;
@@ -158,17 +178,14 @@ main {
 
             color: var(--branco);
             width: 90%;
-            font-size: .9rem;
+            font-size: 1rem;
 
         }
 
 
         .cards-highlights {
 
-            display: grid;
-            grid-template-columns: 1fr;
             justify-items: center;
-            gap: 1rem;
 
             font-family: var(--ffprimaria);
 
@@ -179,7 +196,7 @@ main {
 
             .highlights-card-1 {
 
-                background-image: url(../../assets/img/pessoa1.png);
+                background-image: url(../assets/img/pessoa1.png);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center top;
@@ -206,7 +223,7 @@ main {
 
             .highlights-card-2 {
 
-                background-image: url(../../assets/img/pessoa2.png);
+                background-image: url(../assets/img/pessoa2.png);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center top;
@@ -232,7 +249,7 @@ main {
 
             .highlights-card-3 {
 
-                background-image: url(../../assets/img/pessoa3.png);
+                background-image: url(../assets/img/pessoa3.png);
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center top;
@@ -254,8 +271,106 @@ main {
                 height: 20rem;
                 width: 16rem;
 
+            }
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 801px) {
+
+    .buttons {
+
+        display: none;
+    }
+
+    nav {
+
+        position: relative;
+    }
+
+    main {
+
+        padding-top: 0;
+    }
+
+    #btn-hero {
+
+        width: 25%;
+    }
+
+    .c-destaques {
+
+        height: 80rem;
+
+        .cards-highlights {
+
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
         }
     }
 }
 
+@media screen and (max-width: 800px) {
+
+    .menu-desktop {
+
+        display: none;
+    }
+
+    .menu-list {
+
+        display: none;
+    }
+
+    #btn-hero {
+
+        width: 10rem;
+    }
+
+    .c-destaques {
+
+        height: 80rem;
+
+        .cards-highlights {
+
+            gap: 2rem;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    .elements-hero {
+
+        h1 {
+
+            font-size: 3rem;
+        }
+
+        p {
+
+            font-size: 1.5rem;
+        }
+    }
+
+    .c-destaques {
+
+        height: 45rem;
+
+        p {
+
+            font-size: 1.2rem;
+        }
+
+        .cards-highlights {
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
 }

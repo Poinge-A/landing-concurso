@@ -40,6 +40,20 @@ nav {
   width: 100%;
   z-index: 100;
 }
+nav .menu-desktop {
+  font-family: var(--ffprimaria);
+}
+nav .menu-desktop ul {
+  display: flex;
+  list-style: none;
+}
+nav .menu-desktop ul li {
+  margin-left: 3rem;
+}
+nav .menu-desktop ul li a {
+  text-decoration: none;
+  color: var(--preto);
+}
 nav #open-menu-btn {
   border: none;
   background-color: transparent;
@@ -55,8 +69,8 @@ nav .menu-list {
   z-index: 1;
   top: 100%;
   right: 0;
-  height: 100%;
-  width: 60vw;
+  height: 50vh;
+  width: 50vw;
   justify-content: center;
   display: none;
 }
@@ -76,7 +90,7 @@ nav .menu-list li a {
 }
 
 main {
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
 main .hero {
   width: 100%;
@@ -85,7 +99,7 @@ main .hero {
   height: 30rem;
   align-items: center;
   background-color: #3d52af;
-  background-image: url(/assets/img/img-hero3.jpg);
+  background-image: url(../assets/img/img-hero3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -104,12 +118,12 @@ main .hero .card-hero {
 main .hero .card-hero #btn-hero {
   justify-content: center;
   border: none;
+  font-size: 1rem;
   height: 2rem;
-  width: 10rem;
   border-radius: 0.5rem;
   margin-top: 2rem;
   color: var(--branco);
-  background-color: blue;
+  background-color: var(--azul-s4);
   font-weight: 700;
   box-shadow: -3px 7px 7px 1px var(--preto);
 }
@@ -120,7 +134,6 @@ main .hero .elements-hero {
   margin-top: 8rem;
 }
 main .hero .elements-hero h1 {
-  font-size: 2.32rem;
   color: rgb(255, 255, 255);
   text-align: center;
 }
@@ -128,10 +141,8 @@ main .hero .elements-hero p {
   margin-top: 1rem;
   color: white;
   text-align: center;
-  font-size: 1rem;
 }
 main .c-destaques {
-  height: 80rem;
   box-shadow: 0 0 4px 0 var(--azul-s6);
   display: flex;
   flex-direction: column;
@@ -149,20 +160,17 @@ main .c-destaques h1 {
 main .c-destaques p {
   color: var(--branco);
   width: 90%;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 main .c-destaques .cards-highlights {
-  display: grid;
-  grid-template-columns: 1fr;
   justify-items: center;
-  gap: 1rem;
   font-family: var(--ffprimaria);
 }
 main .c-destaques .cards-highlights span {
   font-weight: 700;
 }
 main .c-destaques .cards-highlights .highlights-card-1 {
-  background-image: url(../../assets/img/pessoa1.png);
+  background-image: url(../assets/img/pessoa1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -179,7 +187,7 @@ main .c-destaques .cards-highlights .highlights-card-1 {
   width: 16rem;
 }
 main .c-destaques .cards-highlights .highlights-card-2 {
-  background-image: url(../../assets/img/pessoa2.png);
+  background-image: url(../assets/img/pessoa2.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -196,7 +204,7 @@ main .c-destaques .cards-highlights .highlights-card-2 {
   width: 16rem;
 }
 main .c-destaques .cards-highlights .highlights-card-3 {
-  background-image: url(../../assets/img/pessoa3.png);
+  background-image: url(../assets/img/pessoa3.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -213,6 +221,65 @@ main .c-destaques .cards-highlights .highlights-card-3 {
   width: 16rem;
 }
 
+@media screen and (min-width: 801px) {
+  .buttons {
+    display: none;
+  }
+  nav {
+    position: relative;
+  }
+  main {
+    padding-top: 0;
+  }
+  #btn-hero {
+    width: 25%;
+  }
+  .c-destaques {
+    height: 80rem;
+  }
+  .c-destaques .cards-highlights {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .menu-desktop {
+    display: none;
+  }
+  .menu-list {
+    display: none;
+  }
+  #btn-hero {
+    width: 10rem;
+  }
+  .c-destaques {
+    height: 80rem;
+  }
+  .c-destaques .cards-highlights {
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .elements-hero h1 {
+    font-size: 3rem;
+  }
+  .elements-hero p {
+    font-size: 1.5rem;
+  }
+  .c-destaques {
+    height: 45rem;
+  }
+  .c-destaques p {
+    font-size: 1.2rem;
+  }
+  .c-destaques .cards-highlights {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 .container {
   display: flex;
   flex-flow: column;
@@ -317,7 +384,6 @@ section .card-concurso a {
 section .card-vantagens {
   text-align: center;
   margin-top: 0.8rem;
-  box-shadow: 0 0 4px 0 var(--azul-s6);
   width: 16rem;
   height: 33vh;
   border: none;

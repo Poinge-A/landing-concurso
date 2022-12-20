@@ -15,19 +15,36 @@
 <header>
   <nav>
     <div class="logo">
-      <i class="fa-solid fa-book-open-reader fa-3x"></i>
+      <i class="fa-solid fa-book-open-reader fa-2x"></i>
     </div>
 
-    <button id="open-menu-btn"><i class="fa-solid fa-bars fa-3x"></i></button>
+    <div class="buttons">
 
-    <button id="close-menu-btn"><i class="fa-solid fa-xmark fa-3x"></i></button>
+      <button id="open-menu-btn"><i class="fa-solid fa-bars fa-3x"></i></button>
+  
+      <button id="close-menu-btn"><i class="fa-solid fa-xmark fa-3x"></i></button>
+    </div>
+
+
+    <div class="menu-desktop">
+
+      <ul>
+        <li><a href="#desejo">Seu Desejo</a></li>
+        <li><a href="#concursos-abertos">Concursos Abertos</a></li>
+        <li><a href="#vantagens">Vantagens</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#section-planos">Planos</a></li>
+      </ul>
+
+    </div>
 
     <div class="menu-list">
         <ul>
-          <li><a href="">Destaques</a></li>
-          <li><a href="">Próximos Concursos</a></li>
-          <li><a href="">Depoimentos</a></li>
-          <li><a href="">Planos</a></li>
+          <li class="list1"><a href="#desejo">Seu Desejo</a></li>
+          <li class="list2"><a href="#concursos-abertos">Concursos Abertos</a></li>
+          <li><a href="#vantagens">Vantagens</a></li>
+          <li class="list3"><a href="#depoimentos">Depoimentos</a></li>
+          <li class="list4"><a href="#section-planos">Planos</a></li>
         </ul>
     </div>
   </nav>
@@ -53,7 +70,7 @@
       <div class="c-destaques">
 
 
-        <h1>Qual o seu desejo?</h1>
+        <h1 id="desejo">Qual o seu desejo?</h1>
         <p>Somos um site voltado para te entregar
           informações e ajudá-lo em conquistar sua
           vaga no mercado de trabalho!
@@ -78,7 +95,7 @@
       <!-- Próximos Concursos --> 
       <section class="container-prox-concurso">
         <div class="title-card">
-          <h3>Principais concursos públicos abertos</h3>
+          <h3 id="concursos-abertos">Principais concursos públicos abertos</h3>
         </div>
         <div class="card-concurso">
           <a href=""> <div>
@@ -124,7 +141,7 @@
       
 
       <!-- Vantagens de usar o landing-concurso -->
-      <section class="container-vantagens">
+      <section id="vantagens" class="container-vantagens">
         <div class="title-card-vantagens">
           <h3>Vantagens de estudar no Landing Concursos</h3>
         </div>
@@ -155,7 +172,7 @@
 
       <!-- Depoimentos -->
       <section class="container">
-        <h3>Experiências</h3>
+        <h3 id="depoimentos">Experiências</h3>
         <div class="card">
           <img class="icon" src="assets/img/pessoa 1 depoimentos.png">
           <div class="texto">
