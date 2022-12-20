@@ -1,6 +1,9 @@
 // Barra de Navegação
 nav {
-
+    .logo a{
+        text-decoration: none;
+        color: var(--preto);
+    }
     .menu-desktop {
 
         font-family: var(--ffprimaria);
@@ -108,11 +111,13 @@ main {
             width: 100%;
             opacity: 85%;
             background-color: rgb(0, 0, 0);
-
             display: flex;
             flex-direction: column;
             align-items: center;
-
+            a{
+                color: var(--branco);
+                text-decoration: none;
+            }
 
             #btn-hero {
                 justify-content: center;
