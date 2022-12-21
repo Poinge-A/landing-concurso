@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
 :root {
   --azul: #0e79b2;
@@ -529,12 +530,17 @@ section p {
   max-width: 30ch;
 }
 
-.plano-content p, .plano-content h4, .plano-content ul {
+.plano-content p, .plano-content ul {
   margin: 1rem;
 }
 
 .plano-content li {
-  margin: 0.2rem 1rem;
+  margin: 1rem;
+  list-style-type: none;
+}
+
+.plano-content li:before {
+  content: "✔ ";
 }
 
 .plano-button {
@@ -557,4 +563,21 @@ section p {
   font-family: var(--ffprimaria);
   font-size: 120%;
   font-weight: bold;
+  margin: 3rem 1rem 1rem 1rem;
+}
+
+@media screen and (min-width: 900px) {
+  .container-vendas {
+    flex-flow: row nowrap;
+  }
+  .plano-button:hover {
+    background-color: var(--azul-s3);
+    cursor: pointer;
+  }
+  .plano:hover {
+    box-shadow: 0 3px 8px 0 rgba(181, 186, 189, 0.7490196078);
+    transform: scale(1.1);
+    border: 1px groove #62A8CD;
+    transition: transform 500ms;
+  }
 }/*# sourceMappingURL=main.css.map */
