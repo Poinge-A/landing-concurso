@@ -131,6 +131,11 @@ main .hero .card-hero #btn-hero {
   background-color: var(--azul-s4);
   font-weight: 700;
   box-shadow: -3px 7px 7px 1px var(--preto);
+  transform: scale(1);
+}
+main .hero .card-hero #btn-hero:hover {
+  transform: scale(1.1);
+  transition: transform 500ms;
 }
 main .hero .card-hero #btn-hero a {
   color: var(--branco);
@@ -194,6 +199,11 @@ main .c-destaques .cards-highlights .highlights-card-1 {
   border-radius: 0.5rem;
   height: 20rem;
   width: 16rem;
+  transform: scale(1);
+}
+main .c-destaques .cards-highlights .highlights-card-1:hover {
+  transform: scale(1.1);
+  transition: transform 500ms;
 }
 main .c-destaques .cards-highlights .highlights-card-2 {
   background-image: url(../assets/img/pessoa2.png);
@@ -211,6 +221,11 @@ main .c-destaques .cards-highlights .highlights-card-2 {
   border-radius: 0.5rem;
   height: 20rem;
   width: 16rem;
+  transform: scale(1);
+}
+main .c-destaques .cards-highlights .highlights-card-2:hover {
+  transform: scale(1.1);
+  transition: transform 500ms;
 }
 main .c-destaques .cards-highlights .highlights-card-3 {
   background-image: url(../assets/img/pessoa3.png);
@@ -228,6 +243,11 @@ main .c-destaques .cards-highlights .highlights-card-3 {
   border-radius: 0.5rem;
   height: 20rem;
   width: 16rem;
+  transform: scale(1);
+}
+main .c-destaques .cards-highlights .highlights-card-3:hover {
+  transform: scale(1.1);
+  transition: transform 500ms;
 }
 
 @media (min-width: 320px) {

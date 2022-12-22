@@ -136,6 +136,14 @@ main {
                 font-weight: 700;
                 box-shadow: -3px 7px 7px 1px var(--preto);
 
+                transform: scale(1.0);
+
+                &:hover {
+
+                    transform: scale(1.1);
+                    transition: transform 500ms;
+                }
+
                 a {
 
                     color: var(--branco);
@@ -233,7 +241,13 @@ main {
                 height: 20rem;
                 width: 16rem;
 
+                transform: scale(1.0);
 
+                &:hover {
+
+                    transform: scale(1.1);
+                    transition: transform 500ms;
+                }
             }
 
             .highlights-card-2 {
@@ -260,6 +274,14 @@ main {
                 height: 20rem;
                 width: 16rem;
 
+                transform: scale(1.0);
+
+                &:hover {
+
+                    transform: scale(1.1);
+                    transition: transform 500ms;
+                }
+
             }
 
             .highlights-card-3 {
@@ -285,6 +307,14 @@ main {
 
                 height: 20rem;
                 width: 16rem;
+
+                transform: scale(1.0);
+
+                &:hover {
+
+                    transform: scale(1.1);
+                    transition: transform 500ms;
+                }
 
             }
         }
