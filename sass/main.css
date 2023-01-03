@@ -372,14 +372,14 @@ main .c-destaques .cards-highlights .highlights-card-3:hover {
   margin-bottom: 2rem;
 }
 
-section .title-card {
+.container-prox-concurso .title-card {
   font-size: 1.1rem;
   font-family: var(--ffprimaria);
   margin-bottom: 1.3rem;
   margin-top: 1.5rem;
   text-align: center;
 }
-section .card-concurso {
+.container-prox-concurso .card-concurso {
   width: 16rem;
   height: 16rem;
   border: none;
@@ -393,18 +393,16 @@ section .card-concurso {
   background-color: white;
   color: var(--preto);
 }
-section .card-concurso a {
+.container-prox-concurso .card-concurso a {
   text-decoration: none;
   color: var(--preto);
 }
 
 .item-title-card {
-  font-size: 0.75rem;
-  padding: 0.625rem 0.9375rem;
+  font-size: 0.95rem;
   font-family: var(--ffprimaria);
   font-style: bold;
-  border-top: 0.35rem solid var(--azul);
-  border-bottom: 0.05rem solid rgb(248, 230, 230);
+  border-bottom: 0.35rem solid var(--azul);
 }
 
 .alert-vagas {
@@ -435,7 +433,7 @@ section .card-concurso a {
   margin-top: 1rem;
 }
 
-section .card-vantagens {
+.container-vantagens .card-vantagens {
   text-align: center;
   margin-top: 0.8rem;
   width: 16rem;
@@ -444,11 +442,11 @@ section .card-vantagens {
   border-radius: 0.5rem;
   margin-bottom: 1.25rem;
 }
-section h2 {
+.container-vantagens h2 {
   font-size: 1.4rem;
   font-weight: bold;
 }
-section p {
+.container-vantagens p {
   font-size: 0.9rem;
   word-wrap: break-word;
   text-align: center;
@@ -479,12 +477,24 @@ section p {
     gap: 3rem;
   }
   .vantagens-card-responsive {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.8rem;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
   }
   .card-vantagens h2 {
     margin-bottom: 0.8rem;
+  }
+  .title-card-vantagens h3 {
+    font-size: 2rem;
+  }
+  .card-vantagens {
+    transition: all 0.5s;
+    border: 3px solid transparent;
+  }
+  .card-vantagens:hover {
+    border: 3px solid var(--azul);
+    border-radius: 50%;
   }
 }
 @media screen and (min-width: 800px) {
@@ -494,12 +504,25 @@ section p {
     gap: 3rem;
   }
   .vantagens-card-responsive {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     gap: 0.8rem;
   }
   .card-vantagens h2 {
     margin-bottom: 0.8rem;
+  }
+  .title-card-vantagens h3 {
+    font-size: 2rem;
+  }
+  .card-vantagens {
+    transition: all 0.5s;
+    border: 3px solid transparent;
+  }
+  .card-vantagens:hover {
+    border: 3px solid var(--azul);
+    border-radius: 30%;
+  }
+  .card-vantagens:hover p {
+    font-size: 0.8rem;
   }
 }
 .planos-title {
